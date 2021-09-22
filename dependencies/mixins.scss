@@ -65,3 +65,24 @@
   -webkit-align-items: $value;
   align-items: $value;
 }
+
+@mixin animation($type: fadeIn, $duration: 1s) {
+  animation: $type $duration;
+  -webkit-animation: $type $duration;
+  -moz-animation: $type $duration;
+  -o-animation: $type $duration;
+  -ms-animation: $type $duration;
+}
+
+@mixin appearance($var: none) {
+  -moz-appearance: $var;
+  -webkit-appearance: $var;
+  appearance: $var;
+}
+
+@mixin transition($where: all, $duration: 1s, $effect: ease-out) {
+  -webkit-transition: $where $duration $effect;
+  -moz-transition: $where $duration $effect;
+  -o-transition: $where $duration $effect;
+  transition: $where $duration $effect;
+}
