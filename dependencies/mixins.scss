@@ -1,51 +1,57 @@
 @mixin box-sizing($value: unset) {
-    -webkit-box-sizing: $value;
-    -moz-box-sizing: $value;
-    box-sizing: $value;
+  -webkit-box-sizing: $value;
+  -moz-box-sizing: $value;
+  box-sizing: $value;
 }
 
-@mixin column-width ($value: 250px ) {
-    -webkit-column-width: $value;
-    -moz-column-width: $value;
-    column-width: $value;
+@mixin column-width($value: 250px ) {
+  -webkit-column-width: $value;
+  -moz-column-width: $value;
+  column-width: $value;
 }
 
 @mixin box-shadow( $x: 10px , $y: 10px , $blur: 0px , $spread: 0px , $color: #000000 ) {
-    -webkit-box-shadow: $x $y $blur $spread $color;
-    -moz-box-shadow: $x $y $blur $spread $color;
-    box-shadow: $x $y $blur $spread $color;
+  -webkit-box-shadow: $x $y $blur $spread $color;
+  -moz-box-shadow: $x $y $blur $spread $color;
+  box-shadow: $x $y $blur $spread $color;
 }
 
 @mixin flexbox {
-    display: -webkit-box; 
-    display: -moz-box;
-    display: -ms-flexbox;
-    display: -webkit-flex;
-    display: flex;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
 }
 
 @mixin flex($values: auto) {
-    -webkit-box-flex: $values;
-    -moz-box-flex:  $values;
-    -ms-flex:  $values;
-    -webkit-flex:  $values;
-    flex:  $values;
+  -webkit-box-flex: $values;
+  -moz-box-flex: $values;
+  -ms-flex: $values;
+  -webkit-flex: $values;
+  flex: $values;
 }
 
-@mixin flex-order($integer:1){
-    -webkit-box-ordinal-group: $integer;
-    -moz-box-ordinal-group: $integer;
-    -ms-flex-order: $integer;
-    -webkit-order: $integer;
-    order: $integer;
+@mixin flex-order($integer:1) {
+  -webkit-box-ordinal-group: $integer;
+  -moz-box-ordinal-group: $integer;
+  -ms-flex-order: $integer;
+  -webkit-order: $integer;
+  order: $integer;
 }
 
 @mixin flex-grow($integer: 1) {
-    -webkit-box-flex: $integer;
-    -moz-box-flex: $integer;
-    -webkit-flex-grow: $integer;
-    -ms-flex: $integer;
-    flex-grow: $integer;
+  -webkit-box-flex: $integer;
+  -moz-box-flex: $integer;
+  -webkit-flex-grow: $integer;
+  -ms-flex: $integer;
+  flex-grow: $integer;
+}
+
+@mixin flex-wrap($val:wrap) {
+  flex-wrap: $val;
+  -ms-flex-wrap: $val;
+  -webkit-flex-wrap: $val;
 }
 
 @mixin align-items($value: stretch) {
