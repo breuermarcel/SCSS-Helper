@@ -109,3 +109,10 @@
   -ms-hyphens: auto;
   hyphens: auto;
 }
+
+@mixin border-radius($value: 50%) {
+  -webkit-box-sizing: $value;
+  -moz-border-radius: $value;
+  border-radius: $value;
+  -khtml-border-radius: $value;
+}
