@@ -111,6 +111,7 @@
 }
 
 @mixin border-radius($value: 50%) {
+  -webkit-appearance: none;
   -webkit-box-sizing: $value;
   -moz-border-radius: $value;
   border-radius: $value;
