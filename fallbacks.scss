@@ -11,8 +11,8 @@
 }
 
 @mixin box-shadow($x: 10px, $y: 10px, $blur: 0px, $spread: 0px, $color: #000000) {
-  -webkit-box-shadow: $x $y $blur $spread $color;
   -moz-box-shadow: $x $y $blur $spread $color;
+  -webkit-box-shadow: $x $y $blur $spread $color;
   box-shadow: $x $y $blur $spread $color;
 }
 
@@ -48,10 +48,10 @@
   flex-grow: $integer;
 }
 
-@mixin flex-wrap($val: wrap) {
-  flex-wrap: $val;
-  -ms-flex-wrap: $val;
-  -webkit-flex-wrap: $val;
+@mixin flex-wrap($value: wrap) {
+  -webkit-flex-wrap: $value;
+  -ms-flex-wrap: $value;
+  flex-wrap: $value;
 }
 
 @mixin align-items($value: stretch) {
@@ -78,11 +78,11 @@
 }
 
 @mixin animation($type: fadeIn, $duration: 1s) {
-  animation: $type $duration;
   -webkit-animation: $type $duration;
   -moz-animation: $type $duration;
   -o-animation: $type $duration;
   -ms-animation: $type $duration;
+  animation: $type $duration;
 }
 
 @mixin appearance($var: none) {
